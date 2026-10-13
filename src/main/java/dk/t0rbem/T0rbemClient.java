@@ -26,7 +26,6 @@ public class T0rbemClient implements ClientModInitializer {
     public static KeyBinding hudKey;
     public static KeyBinding zoomKey;
     public static KeyBinding flightKey;
-    public static KeyBinding freecamKey;
 
     public static boolean hudVisible = true;
 
@@ -43,9 +42,6 @@ public class T0rbemClient implements ClientModInitializer {
 
         flightKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
                 "key.t0rbem.flight", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_G, category));
-
-        freecamKey = KeyBindingHelper.registerKeyBinding(new KeyBinding(
-                "key.t0rbem.freecam", InputUtil.Type.KEYSYM, GLFW.GLFW_KEY_V, category));
 
         ModuleManager.init();
         Config.load();
@@ -67,10 +63,6 @@ public class T0rbemClient implements ClientModInitializer {
 
     private void onTick(MinecraftClient mc) {
         while (hudKey.wasPressed()) hudVisible = !hudVisible;
-        while (freecamKey.wasPressed()) {
-            Module freecam = ModuleManager.get("Freecam");
-            if (freecam != null) freecam.toggle();
-        }
         while (flightKey.wasPressed()) {
             Module flight = ModuleManager.get("Flight");
             if (flight != null) flight.toggle();

@@ -3,6 +3,5 @@
   "key.t0rbem.gui": "Open ClickGUI",
   "key.t0rbem.hud": "Toggle HUD",
   "key.t0rbem.zoom": "Zoom (hold)",
-  "key.t0rbem.flight": "Toggle Flight",
-  "key.t0rbem.freecam": "Toggle Freecam"
+  "key.t0rbem.flight": "Toggle Flight"
 }

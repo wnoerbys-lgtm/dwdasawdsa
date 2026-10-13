@@ -13,7 +13,7 @@ Watermark, Chunk Map (sus/prime chunks), FPS, Ping, CPS, Speed, Coordinates (+re
 Memory, Keystrokes, Armor (med holdbarhed), Potions
 
 ### Utility
-ESP (3D/2D), Storage ESP, Hole ESP, Sus Chunks (chunk-grænser i verden), Freecam, NoFall, Flight (G; WASD + Mellemrum/Shift, justerbar hastighed), Auto Sprint, Fullbright (kun visuelt), Zoom (hold C, justerbar FOV)
+ESP (3D/2D), Storage ESP, Hole ESP, Sus Chunks (chunk-grænser i verden), NoFall, Flight (G; WASD + Mellemrum/Shift, justerbar hastighed), Auto Sprint, Fullbright (kun visuelt), Zoom (hold C, justerbar FOV)
 
 ### Taster
 | Tast | Handling |
@@ -22,6 +22,7 @@ ESP (3D/2D), Storage ESP, Hole ESP, Sus Chunks (chunk-grænser i verden), Freeca
 | H | Skjul/vis HUD |
 | C (hold) | Zoom |
 | G | Slå Flight til/fra |
+| F4 | Freecam (indbygget Freecam-mod) |
 
 Alle taster kan ændres under Indstillinger → Styring → "t0rbem client".
 
@@ -45,3 +46,8 @@ Versionerne i gradle.properties kan tjekkes på https://fabricmc.net/develop
 | Java | 21 |
 
 GitHub Actions-workflow ligger i `.github/workflows/build.yml` og bygger med nyeste Gradle uden wrapper.
+
+## Freecam (indbygget)
+t0rbem client indeholder **Freecam** af hashalite og MattSturgeon (MIT-licens),
+https://modrinth.com/mod/freecam, pakket ind som jar-in-jar. Tast: F4 (kan ændres under Styring).
+Har du Freecam installeret i forvejen, så fjern den fra `mods`.

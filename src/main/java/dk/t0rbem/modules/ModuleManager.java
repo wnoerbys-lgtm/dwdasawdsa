@@ -32,7 +32,6 @@ public class ModuleManager {
         register(new StorageEspModule());
         register(new HoleEspModule());
         register(new SusChunksModule());
-        register(new FreecamModule());
         register(new FullbrightModule());
         register(new ZoomModule());
     }

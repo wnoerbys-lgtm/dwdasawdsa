@@ -9,11 +9,29 @@ base {
     archivesName = project.archives_base_name
 }
 
+repositories {
+    exclusiveContent {
+        forRepository {
+            maven {
+                name = "Modrinth"
+                url = "https://api.modrinth.com/maven"
+            }
+        }
+        filter {
+            includeGroup "maven.modrinth"
+        }
+    }
+}
+
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+
+    // Freecam (MIT) af hashalite/MattSturgeon, pakkes ind i klientens jar (jar-in-jar)
+    modImplementation "maven.modrinth:freecam:${project.freecam_version}"
+    include "maven.modrinth:freecam:${project.freecam_version}"
 }
 
 processResources {
