@@ -361,6 +361,7 @@ public class ClickGuiScreen extends Screen {
                 "Right Shift  -  åbn GUI",
                 "H  -  skjul/vis HUD",
                 "G  -  Flight",
+                "V  -  Freecam",
                 "C  -  Zoom (hold)",
                 "Config: config/t0rbem-client.json"
         };
